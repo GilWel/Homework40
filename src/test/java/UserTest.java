@@ -45,8 +45,13 @@ public class UserTest {
     }
 
     @Test
-    public void isValidPassword_check_success() {
+    public void isValidPassword_assertTrue_success() {
         assertTrue(user.isValidPassword("password"));
+
+    }
+
+    @Test
+    public void isValidPassword_assertFalse_success() {
         assertFalse(user.isValidPassword("incorrect password"));
     }
 }
